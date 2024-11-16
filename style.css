@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    position: relative;
+    background: #1d1d1d;
+    color: #fff;
+    font-family: "roboto", sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #1d1d1d;
+    padding: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+}
+
+.brand{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.links-container{
+    display: flex;
+    list-style: none;
+}
+
+.link{
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.link:hover:not(.active){
+    opacity: 0.7;
+}
+
+.link.active::before,
+.seperator::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.link.active::after,
+.seperator::after{
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+
+/* home section */
+
+.home{
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    height: auto;
+    margin-top: 60px;
+    padding: 0 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hero-heading{
+    font-size: 5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.info{
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.btn{
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    background: darkturquoise;
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+}
+
+/* about section */
+
+.about{
+    width: 100%;
+    height: auto;
+    padding: 50px 10vw;
+}
+
+.heading{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+
+.sub-heading{
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px;
+    opacity: 0.7;
+}
+
+.seperator{
+    width: 25%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.about-me-container{
+    margin: 150px 0 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 50px;
+}
+
+.left-col, .right-col{
+    position: relative;
+}
+
+.left-col::before{
+    content: 'Да, это я';
+    position: absolute;
+    right: 100px;
+    top: -30px;
+}
+
+.left-col::after{
+    content: '';
+    position: absolute;
+    top: -15px;
+    right: 180px;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+    transform-origin: right;
+    transform: rotate(-30deg);
+}
+
+.about-image{
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.about-para {
+    font-size: 1.2rem; /* Размер текста остается прежним */
+    font-weight: 300; /* Легкий шрифт */
+    line-height: 1.6; /* Более компактный межстрочный интервал */
+    text-align: justify; /* Выравнивание текста по ширине */
+    margin-bottom: 20px; /* Уменьшенный отступ между абзацами */
+    color: #333; /* Приятный цвет текста (чуть темнее серого) */
+    max-width: 800px; /* Ограничиваем ширину текста для удобного чтения */
+    margin-left: auto; /* Центрируем блок */
+    margin-right: auto; /* Центрируем блок */
+}
+
+
+/* projects section */
+
+.project{
+    position: relative;
+    padding: 50px 10vw;
+    width: 100%;
+    height: auto;
+}
+
+.project-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.portfolio{
+    background:#1d1d1d;
+    padding-top: 0px;
+    padding-bottom: 115px;
+}
+
+.filters {
+    margin-bottom: 0px;
+    margin-top: 70px;
+    text-align: center
+}
+
+.filters button {
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: darkturquoise;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: rgb(33, 118, 120);
+}
+
+.filters button.active {
+    background-color: rgb(33, 118, 120);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 45px;
+}
+
+.card {
+    background: #fff;
+    max-width: 540px;
+    padding: 10px;
+    box-shadow: 0px 10px 40px rgba(84, 103, 125, 0.35);
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.card-img {
+    margin-bottom: 10px;
+}
+
+.card-title {
+    margin: 0;
+    margin-bottom: 13px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    color: black;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 130%;
+    color: #000;
+    margin: 0;
+}
+
+.center-table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 45px;
+}
+
+.styled-table {
+    border-spacing: 15px; 
+}
+
+.styled-table td {
+    padding: 10px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: darkturquoise;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.project-link:hover {
+    color:rgb(33, 118, 120); 
+}
+
+.project-link:visited {
+    color: rgb(33, 118, 120);
+}
+
+
+.footer{
+    background: darkturquoise;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-icons{
+    background: darkturquoise;
+}
+
+@media (max-width: 1200px) {
+    .about-me-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .navbar {
+        padding: 0 5vw;
+    }
+
+    .home {
+        padding: 0 5vw;
+    }
+
+    .about {
+        padding: 50px 5vw;
+    }
+
+    .project {
+        padding: 50px 5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 3rem;
+    }
+
+    .filters button {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .link {
+        margin: 0 5px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-heading {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+
+    .about-para {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}

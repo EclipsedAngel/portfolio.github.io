@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compstible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar">
+    <h1 class="brand">портфолио</h1>
+    <ul class="links-container">
+        <li class="links-item"><a href="#home-section" class="link active">Главная</a></li>
+        <li class="links-item"><a href="#about-section" class="link">О себе</a></li>
+        <li class="links-item"><a href="#certificates-section" class="link">Сертификаты</a></li>
+        <li class="links-item"><a href="#project section" class="link">Проекты</a></li>
+        <li class="links-item"><a href="#contact-section" class="link">Контакты</a></li>
+    </ul>
+</nav>
+
+<!-- home section -->
+<section class="home" id="home-section">
+    <div class="hero-content">
+       <h1 class="hero-heading">Данилейчук Ксения</h1><br><br>
+       <a href="#contact-section" class="btn">контакты</a>
+    </div>
+        <img src="https://sun9-34.userapi.com/impg/PfZz2V8Bqi-mPY4NjCczcDTt0XZ6GRyK99531w/35-SSvZmKr0.jpg?size=320x428&quality=95&sign=09fb47a6cf7f5b38fed557ae5f35efc6&type=album" class="image" alt="">
+</section>
+
+<!-- about section -->
+<section class="about" id="about-section">
+    <h2 class="heading">О себе</span></h2>
+    <div class="seperator"></div>
+
+    <div class="about-me-container">
+        <div class="left-col">
+            <img src="https://sun9-74.userapi.com/impg/Vay4IG9oeQIeZZuJKzeNqWtcZFqNg33PHzzJ6w/bJsmhvX4Y40.jpg?size=300x400&quality=95&sign=a1bc82108098268a320b5ada16e52e77&type=album" class="about-image" alt="">
+        </div>
+        <div class="right-col">
+            <p class="about-para">
+                Меня зовут Данилейчук Ксения Игоревна, я студентка четвертого курса Амурского педагогического колледжа по специальности «Информационные системы и программирование». Моя специализация сосредоточена на проектировании, разработке и администрировании баз данных.
+              </p>
+              <br>
+              <p class="about-para">
+                В ходе обучения я изучила программирование на Python и C++, основы веб-разработки с использованием HTML, CSS, JavaScript и PHP, а также основы компьютерной графики.
+              </p>
+              <br>
+              <p class="about-para">
+                Стремлюсь к постоянному совершенствованию своих знаний и навыков, чтобы стать высококвалифицированным специалистом в области информационных технологий.
+              </p>              
+        </div>
+    </div>
+</section>
+
+<!-- certificates-section -->
+<section class="project" id="certificates-section">
+    <h2 class="heading">Сертификаты</span></h2>
+    <div class="seperator"></div>
+    <div class="filters">
+        <button onclick="filterCertificates('course1')" id="course1-btn">Курс 1</button>
+        <button onclick="filterCertificates('course2')" id="course2-btn">Курс 2</button>
+        <button onclick="filterCertificates('course3')" id="course3-btn">Курс 3</button>
+        <button onclick="filterCertificates('course4')" id="course4-btn">Курс 4</button>
+    </div>
+        <div class="portfolio">
+            <div class="container" id="course1-certificates" style="display: none;">
+                <table cellspacing = 15>
+                    <tr>
+                        <td><div class="card" data-course="course1">
+                            <img class="card-img" src="https://sun9-14.userapi.com/impg/VVt1jb0hjJXnHxUwEGLW10ZFECm2GAMpWLeDmw/OcxzX_PTOGY.jpg?size=520x366&quality=95&sign=571313ad0aeef0351039b8dcf4194196&type=album" alt="ИТ/Диктант">
+                            <h3 class="card-title">ИТ/Диктант</h3>
+                            <p>13.09.2021</p>
+                        </div></td>
+    
+                        <td><div class="card" data-course="course1">
+                            <img class="card-img" src="https://sun9-54.userapi.com/impg/n3REOn1cIpWI361VnKEsAo3Tbmwsy-cXWyaB0g/QQ5KK6S7XTw.jpg?size=520x366&quality=95&sign=75fc0388445dc024115e1312c969e434&type=album" alt="Тест Компьютерная грамотность">
+                            <h3 class="card-title">Тест "Компьютерная грамотность"</h3>
+                            <p>14.10.2021</p>
+                        </div></td>
+                    </tr>
+    
+                    <tr>
+                        <td><div class="card" data-course="course1">
+                            <img class="card-img" src="https://sun9-45.userapi.com/impg/3P0c81l1BDawCxIi4krP2-W4C-TO24FGtNU7Sg/70gwd8la-tU.jpg?size=520x336&quality=95&sign=4cebedd7da7ea9857d1fd7b28e111f41&type=album" alt="Большой Этнографический диктант">
+                            <h3 class="card-title">Большой Этнографический диктант</h3>
+                            <p>03.11.2021</p>
+                        </div></td>
+                    
+                        <td><div class="card" data-course="course1">
+                            <img class="card-img" src="https://sun9-1.userapi.com/impg/uq6-BH8g2bHApYmz2t9Q0DNveeh-JNmZqTFIGw/qAyCmdtb7O0.jpg?size=520x336&quality=95&sign=7d13cbb95291ea7350e47bf15da7f6a3&type=album" alt="Международная акция Тест по истории Великой Отечественной Войны">
+                            <h3 class="card-title">Тест по истории ВОВ</h3>
+                            <p>03.12.2021</p>
+                        </div></td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="card" data-course="course1">
+                            <img class="card-img" src="https://sun9-17.userapi.com/impg/nvbjVALR9gjOwxoahuO86qWeMg76JtPfNXHSQQ/-JEr2bOswbA.jpg?size=520x749&quality=95&sign=a03a8421772efa42b760197d31b0466d&type=album" alt="ВА по сбору макулатуры #БумБатл">
+                            <h3 class="card-title">Акция по сбору макулатуры #БумБатл</h3>
+                            <p>04.12.2021</p>
+                        </div></td>
+                    
+                        <td><div class="card" data-course="course1">
+                            <img class="card-img" src="https://sun9-80.userapi.com/impg/lPeKCGhJ2lXv5WWpqGtbVgucaWWZjX691VbhUA/S5bZggP5qaA.jpg?size=520x336&quality=95&sign=1f2c1fe44f568fa3dd2e0c2e834bb49b&type=album" alt="Акция по оказанию помощи приюту">
+                            <h3 class="card-title">Акция по оказанию помощи приюту</h3>
+                            <p>2021</p>
+
+                            <img class="card-img" src="https://sun5-3.userapi.com/impg/YDM5venVaeCcvlUuoiMPxQQ2znv8hR_h9BNttA/HPLsUlubRGA.jpg?size=520x336&quality=95&sign=165154fb398a04c3efcf2e7df2d0b936&type=album" alt="Лыжня России-2022">
+                            <h3 class="card-title">Лыжня России-2022</h3>
+                            <p>12.02.2022</p>
+                        </div></td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="card" data-course="course1">
+                            <img class="card-img" src="https://sun9-14.userapi.com/impg/wNBEbc1QeV35r5RgZyjyFYRe_IIAq1atwbhAdg/bC01ZRLHz-w.jpg?size=520x749&quality=95&sign=e3ecc332b4252d2311d83a735448ed69&type=album" alt="Интеллектуальная игра Олимпийские знатоки">
+                            <h3 class="card-title">Интеллектуальная игра "Олимпийские знатоки"</h3>
+                            <p>2021</p>
+                        </div></td>
+                    
+                        <td><div class="card" data-course="course1">
+                            <img class="card-img" src="https://sun9-83.userapi.com/impg/7xEDqeQLREA6R4BORXNFz01-SFPwpx7nW0I-1g/93ndzH_nbiQ.jpg?size=520x780&quality=95&sign=5ac4812b45793410d5bc02d7351c2a16&type=album" alt="Турнир по баскетболу">
+                            <h3 class="card-title">Турнир по баскетболу</h3>
+                            <p>2022</p>
+                        </div></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="container" id="course2-certificates" style="display: none;">
+                <table cellspacing = 15>
+                    <tr>
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-75.userapi.com/impg/WfxwoIv96rXc4uibSdorKJr1EUi2aSwFikWZtQ/YyzWXsPJbxE.jpg?size=520x367&quality=95&sign=31e636ce2f533b9f3c16db640d7a2d78&type=album" alt="ИТ/Диктант">                             
+                            <h3 class="card-title">"ИТ/Диктант"</h3>                             
+                            <p>13.09.2022</p>                         
+                        </div></td>
+
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-48.userapi.com/impg/LKzRgIOPxyJSZ8NxqpdC-YmcLOuldQOsJg_xKQ/_VOWX4NCGI0.jpg?size=520x336&quality=95&sign=928006e2c5c01f14595a36b0d8a128ad&type=album" alt="Курс Базы данных: модели, разработка, реализация">
+                            <h3 class="card-title">Курс "Базы данных: модели, разработка, реализация"</h3>
+                            <p>12.11.2022</p>
+                        </div></td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-1.userapi.com/impg/0vrEwGEzAaMxQJlXzTcj_rkjA2dDq2tBJQ3wOg/jCegvpfVUMI.jpg?size=520x336&quality=95&sign=31fc331ec3ba2b497b2c4a3bd9df1f24&type=album" alt="Вторая жизнь">
+                            <h3 class="card-title">"Вторая жизнь"</h3>
+                            <p>13.11.2022</p>
+                        </div></td>
+
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-9.userapi.com/impg/6-DGCgP6H5Vcr6HgAzHBwQI0YqqI8J9qW5jlow/wB70rdHaO3o.jpg?size=520x336&quality=95&sign=54a0621033cf829e1b6cad78bc86a0ff&type=album" alt="Всероссийский социологический диктант">
+                            <h3 class="card-title">Всероссийский социологический диктант</h3>
+                            <p>14.11.2022</p>
+                        </div></td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-59.userapi.com/impg/AnDLhccC9vNyBqnwpBTGqsYzC65UvXrklRFoqw/pi1xQbv6Kn0.jpg?size=520x336&quality=95&sign=d0ff668c43ab939bd25fa8e7f91ccf10&type=album" alt="Военно-патриотический диктант">
+                            <h3 class="card-title">Военно-патриотический диктант</h3>
+                            <p>15.11.2022</p>
+                        </div></td>
+
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-56.userapi.com/impg/yVpEUxNeqMkTABtZ8kt5qoDPGYq5ttYdDJigOA/zr5nSbgXijA.jpg?size=520x336&quality=95&sign=a588aceed8ecab3160caec7338a99ebe&type=album" alt="Поколение Python: курс для начинающих">
+                            <h3 class="card-title">"Поколение Python": курс для начинающих</h3>
+                            <p>17.11.2022</p>
+                        </div></td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-56.userapi.com/impg/FWMYHx6QPrAEQXDEqG2Hzrdr7LGVUCjlq988gA/ffNCAkOxMtU.jpg?size=520x336&quality=95&sign=0ec1ed034ce5e24dad1861973278d9dc&type=album" alt="МА Тест по истории ВОВ">
+                            <h3 class="card-title">Тест по истории ВОВ</h3>
+                            <p>02.12.2022</p>
+
+                            <img class="card-img" src="https://sun9-86.userapi.com/impg/LgVDYk9KKpR-UkNFMkbVfpdyHMEVXS3y0sbv3Q/lzXzkrII4Oo.jpg?size=520x336&quality=95&sign=8f1e4ad722df0fec91375556a37c61d5&type=album" alt="Онлайн-квиз Что я знаю о кмпьютерной графике?">
+                            <h3 class="card-title">Онлайн-квиз "Что я знаю о компьютерной графике?"</h3>
+                            <p>02.12.2022</p>
+                        </div></td>
+
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-7.userapi.com/impg/6UDL9Ria5VFf5Kx04_Y-zDCgb6m-2_r2njFVpw/B0micJnPLs0.jpg?size=520x749&quality=95&sign=4601a9a855c04fe50ff75a81ec2f47b2&type=album" alt="Всероссийский онлайн-зачет по финансовой грамотности">
+                            <h3 class="card-title">Всероссийский онлайн-зачет по финансовой грамотности</h3>
+                            <p>07.12.2022</p>
+                        </div></td>
+                    </tr>
+    
+                    <tr>
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-23.userapi.com/impg/8LbVLXRUTFEabGaTu57i2RVVmwXhxC6S7cS0JA/9eXUYY2Yy7o.jpg?size=520x336&quality=95&sign=06cafcdd65f3d5a0ec27c47f239cff96&type=album" alt="Большой Этнографический диктант">
+                            <h3 class="card-title">Большой Этнографический диктант</h3>
+                            <p>03.11.2022</p>
+                            
+                            <img class="card-img" src="https://sun9-74.userapi.com/impg/x6PgNSj_kxYjsAVNMHwo46aUINoFjxO_V2bT6A/RVixNJRAHsc.jpg?size=520x336&quality=95&sign=3f46fce1fe8804ff30d1fa567df102fa&type=album" alt="Онлайн-кроссворд Цифровая безопасность">
+                            <h3 class="card-title">Онлайн-кроссворд "Цифровая безопасность"</h3>
+                            <p>03.11.2022</p>
+                        </div></td>
+
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-68.userapi.com/impg/6icBFZ5F95eWQU_ePmy-IMVfz_0O2LWZjyv_gw/vuIhqf5SeDI.jpg?size=520x780&quality=95&sign=d6dbd34cb8bf1565afaca8ca84b9e822&type=album" alt="Всероссийский экологочиский диктант">
+                            <h3 class="card-title">Всероссийский экологочиский диктант</h3>
+                            <p>11.11.2022</p>
+                        </div></td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-4.userapi.com/impg/JMdsmxNyzq8mfvTvOuE9wSCg3H3KQ3Vb5oOm7A/qxE_rEtMrPU.jpg?size=520x749&quality=95&sign=3f33a5cb087560a136b8257ff85c6682&type=album" alt="Военно-историческая игра Сталинградская битва">
+                            <h3 class="card-title">Военно-историческая игра "Сталинградская битва"</h3>
+                            <p>15.02.2023</p>
+                        </div></td>
+
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-63.userapi.com/impg/vOcZUd6mKkCRj4S544zJERwjEHXhHDvumUgtdw/FywuVQPNWMw.jpg?size=520x780&quality=95&sign=e63f718b079a7f5aa3456ca59a48b33d&type=album" alt="Смотр-конкурс строя и песни">
+                            <h3 class="card-title">Смотр-конкурс строя и песни</h3>
+                            <p>16.02.2023</p>
+                        </div></td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-48.userapi.com/impg/KooIV_wCOvgp0nJaP0p62UWE4NNGD3_-9803Xw/qJeSBKRmyps.jpg?size=520x336&quality=95&sign=5a5cb3d40a3d61de7f95082795cdb83e&type=album" alt="Тест Онлайн мошенничество">
+                            <h3 class="card-title">Тест "Онлайн мошенничество"</h3>
+                            <p>13.03.2023</p>
+                        </div></td>
+
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-28.userapi.com/impg/KfRwXT1lGCVcukcoGiao2G5j73dJuBWhqVBgDA/GwmGBlA9acQ.jpg?size=520x305&quality=95&sign=da158f25a9f523d700c0c0d3ca9fe240&type=album" alt="Онлайн-урок Личный финансовый план. Путь к достижению цели">
+                            <h3 class="card-title">Онлайн-урок "Личный финансовый план. Путь к достижению цели"</h3>
+                            <p>15.03.2023</p>
+                        </div></td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-21.userapi.com/impg/-LNC4e2Kk3J9WGTudxVaEGTgeFMgBvsLH-pWHA/LIZqr5_T3vg.jpg?size=520x305&quality=95&sign=a10cddae33565ff956686b7fb49be218&type=album" alt="Онлайн-урок Биржа и основы инвестирования">
+                            <h3 class="card-title">Онлайн-урок "Биржа и основы инвестирования"</h3>
+                            <p>17.03.2023</p>
+                        </div></td>
+
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-22.userapi.com/impg/5ZC7rZ89X7vbzbwvqH9_fn2KI8WoK-9EYqUh2w/Yiofe1bOX4k.jpg?size=520x336&quality=95&sign=a34018ecf63b47a4a28029ee48fee66b&type=album" alt="Онлайн-квиз Человек в космосе">
+                            <h3 class="card-title">Онлайн-квиз "Человек в космосе"</h3>
+                            <p>14.04.2023</p>
+                        </div></td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="card" data-course="course2">
+                            <img class="card-img" src="https://sun9-73.userapi.com/impg/cYnl17T_WXLrpv_rYBiw5Wyt-rFB7oOkAO913A/Uuk0iAt4ZtY.jpg?size=520x336&quality=95&sign=8ac13819824e5338eb4d0fbbddc49585&type=album" alt="Всероссийская студенческая научно-практическая конференция Наука и образование: сохраняя прошлое, создаем будущее">
+                            <h3 class="card-title">Всероссийская студенческая научно-практическая конференция "Наука и образование: сохраняя прошлое, создаем будущее"</h3>
+                            <p>13.04.2023</p>
+                        </div></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="container" id="course3-certificates" style="display: none;">
+                <table cellspacing = 15>
+                    <tr>
+                        <td><div class="card" data-course="course3">
+                            <img class="card-img" src="https://sun9-30.userapi.com/impg/Vg2iC8Is7YLxnaskcuweTQS6x97F7_JKWjYiKg/-Li5ezkgZEA.jpg?size=520x366&quality=95&sign=909caa1e323d9ea6ce563164671e51cb&type=album" alt="ИТ/Диктант">                             
+                            <h3 class="card-title">"ИТ/Диктант"</h3>                             
+                            <p>13.09.2023</p>                         
+                        </div></td>
+
+                        <td><div class="card" data-course="course3">
+                            <img class="card-img" src="https://sun9-67.userapi.com/impg/VwGxohHqqhLeHhpvgFPKRVGTneuWjFvVt1KqrA/oQHOzwYaRVM.jpg?size=520x366&quality=95&sign=9b0b983faff499638b8f814ff882be31&type=album" alt="ИТ/Диктант PRO">
+                            <h3 class="card-title">"ИТ/Диктант" PRO</h3>
+                            <p>13.09.2023</p>
+                        </div></td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="card" data-course="course3">
+                            <img class="card-img" src="https://sun9-44.userapi.com/impg/l7lLED6wJE7HfYqRiyyNL7of4HNS6kJBsqWX5A/1XqvxG45_98.jpg?size=520x780&quality=95&sign=de65eb1da4f77a29c43e8c52bf576d90&type=album" alt="Цифровой диктант">                             
+                            <h3 class="card-title">"Цифровой диктант"</h3>                             
+                            <p>29.09.2023</p>                         
+                        </div></td>
+
+                        <td><div class="card" data-course="course3">
+                            <img class="card-img" src="https://sun9-36.userapi.com/impg/o7qF0hvQY7ge-65luzzjTAbn16UwZ_QgkfoWgw/txN--DjJ4-E.jpg?size=520x336&quality=95&sign=71e0082302e01fa5759f00ed464cb1e2&type=album" alt="Всероссийский онлайн-конкурс 30 лет Конституции России - проверь себя!">
+                            <h3 class="card-title">Всероссийский онлайн-конкурс "30 лет Конституции России - проверь себя!"</h3>
+                            <p>01.10.2023</p>
+
+                            <img class="card-img" src="https://sun9-60.userapi.com/impg/VwfGFjndAYHZGDgpH0o5k9o5iuMSNaIAYP9Xag/ZAq7Z8DKoGc.jpg?size=520x336&quality=95&sign=e760e6efed841c2ae949c0b696b306f3&type=album" alt="Большой Этнографический диктант">
+                            <h3 class="card-title">Большой Этнографический диктант</h3>
+                            <p>03.11.2023</p>
+                        </div></td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="card" data-course="course3">
+                            <img class="card-img" src="https://sun9-43.userapi.com/impg/kyUZfnxc-CYCPh-zOh8DxfstIEcfLDUmBih5qQ/nJ8rECkcmfY.jpg?size=520x749&quality=95&sign=25e7c2de9e44d96164451971a28ba630&type=album" alt="Всероссийская олимпиада Время знаний по дисциплине: Компьютерные сети">
+                            <h3 class="card-title">Всероссийская олимпиада "Время знаний" по дисциплине: Компьютерные сети</h3>
+                            <p>02.11.2023</p>
+                        </div></td>
+
+                        <td><div class="card" data-course="course3">
+                            <img class="card-img" src="https://sun9-74.userapi.com/impg/TddguZeu4vKVtAksT_EZwLfeqgK4F_UBvLNBxA/_dJsCFNIerI.jpg?size=520x749&quality=95&sign=28869cd5501fc8d99fef9b1ad2aaa5fe&type=album" alt="Всероссийский онлайн-зачет по финансовой грамотности">                             
+                            <h3 class="card-title">Всероссийский онлайн-зачет по финансовой грамотности</h3>                             
+                            <p>20.11.2023</p>                         
+                        </div></td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="card" data-course="course3">
+                            <img class="card-img" src="https://sun9-45.userapi.com/impg/PWUH6SgoVWe2Ord0WZpT6zv_5BQpNUQ1fblYrQ/5ephLhafKfU.jpg?size=520x749&quality=95&sign=91c7d91528859750e59901a244ce4cd1&type=album" alt="Урок Кибербезопасность будущего">
+                            <h3 class="card-title">Урок "Кибербезопасность будущего"</h3>
+                            <p>03.02.2024</p>
+                        </div></td>
+
+                        <td><div class="card" data-course="course3">
+                            <img class="card-img" src="https://sun9-65.userapi.com/impg/OykddQRt0O53dYPIVb81G_POxzmIBEQ-Wk7zjA/f6gorfzin-8.jpg?size=520x749&quality=95&sign=70a69c13b594cbbedadc4a1d2c96880a&type=album" alt="Урок Технологии тестирования">                             
+                            <h3 class="card-title">Урок "Технологии тестирования"</h3>                             
+                            <p>20.03.2024</p>                         
+                        </div></td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="card" data-course="course3">
+                            <img class="card-img" src="https://sun9-65.userapi.com/impg/vNdmlH5Pzha4vzhgm-Dp-S6u8Yhw1Md5kYkUlw/fNqQwY7wAKA.jpg?size=520x336&quality=95&sign=97a75f54ed926e49b6bc2cdba80d6eab&type=album" alt="Курс Программирование на Python">
+                            <h3 class="card-title">Курс "Программирование на Python"</h3>
+                            <p>07.11.2023</p>
+                        </div></td>
+
+                        <td><div class="card" data-course="course3">
+                            <img class="card-img" src="https://sun9-20.userapi.com/impg/JA81xni8d5ULT-7T9WPdiMboD9SbppLsq9Dr2g/0JuFAZzluJc.jpg?size=520x336&quality=95&sign=9f3ecc3da38873fd0c0cb7d0c2fc298f&type=album" alt="Хакатон IT-Тепель">
+                            <h3 class="card-title">Хакатон "IT-Тепель"</h3>
+                            <p>2024</p>
+                        </div></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="container" id="course4-certificates" style="display: none;">
+                <table cellspacing = 15>
+                    <tr>
+                        <td><div class="card" data-course="course4">
+                            <img class="card-img" src="https://sun9-80.userapi.com/impg/IeTbb9GQNDdG4c91TY2qNn2wTFQdK342uftBWw/ehxRp7amE7w.jpg?size=520x749&quality=95&sign=5a8e1a8f3d4b771591556a47b6de733d&type=album" alt="Урок Видеотехнологии">                             
+                            <h3 class="card-title">Урок "Видеотехнологии"</h3>                             
+                            <p>25.09.2024</p>                         
+                        </div></td>
+
+                        <td><div class="card" data-course="course4">
+                            <img class="card-img" src="https://sun9-63.userapi.com/impg/Yo2KZVeky9kXNdO9ePbm-7ke7iLy8oZL3yOiIA/-BYY1neUd-Y.jpg?size=520x749&quality=95&sign=9d5c4824397157a7568d0cfc55e5fa17&type=album" alt="Олимпиада по информатике">                             
+                            <h3 class="card-title">Олимпиада по информатике</h3>                             
+                            <p>11.11.2024</p>                         
+                        </div></td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="card" data-course="course4">
+                            <img class="card-img" src="https://sun9-80.userapi.com/impg/QskghdWOO26aLlHhds0ZBYn8iAgDQxkJM5pQ8w/ODJnPdwnePA.jpg?size=520x336&quality=95&sign=83ea64bfd8dd86c47fc07244e64bafbc&type=album" alt="Этнографический диктант">                             
+                            <h3 class="card-title">Этнографический диктант</h3>                             
+                            <p>07.11.2024</p>                         
+                        </div></td>
+                    </tr>
+                </table>
+            </div>
+        </div>  
+</section>
+
+<!-- projects-section -->
+<section class="project" id="project section">
+    <h2 class="heading">Проекты</span></h2>
+    <div class="seperator"></div>
+        <div class="portfolio">
+            <div class="center-table-container">
+                <table class="styled-table">
+                    <tr>
+                        <td>
+                            <p><a href="https://cloud.mail.ru/public/sJRS/Gbi7SxfzF" target="_blank" class="project-link">Базы данных</a></p>
+                        </td>
+                        <td>
+                            <p><a href="https://cloud.mail.ru/public/yPok/Dq4P4yoQt" target="_blank" class="project-link">Python</a></p>
+                        </td>
+                        <td>
+                            <p><a href="https://cloud.mail.ru/public/962S/xSLcaVy8X" target="_blank" class="project-link">Компьютерная графика</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>   
+</section>
+
+<!-- footer-section -->
+<section class="footer" id="contact-section">
+    <div class="footer">
+        <div class="footer-icons">
+            <h4>+7 (963) 807-37-40</h4>
+            <h4>danilejcukksenia@gmail.com</h4>
+        </div>
+    </div> 
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>
