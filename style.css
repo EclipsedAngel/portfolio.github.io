@@ -177,14 +177,14 @@ body{
 }
 
 .about-para {
-    font-size: 1.2rem; /* Размер текста остается прежним */
-    font-weight: 300; /* Легкий шрифт */
-    line-height: 1.6; /* Более компактный межстрочный интервал */
-    text-align: justify; /* Выравнивание текста по ширине */
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: justify; 
     margin-bottom: 20px;
     color: white; 
-    max-width: 800px; /* Ограничиваем ширину текста для удобного чтения */
-    margin-left: auto; /* Центрируем блок */
+    max-width: 800px; 
+    margin-left: auto;
     margin-right: auto;
 }
 
