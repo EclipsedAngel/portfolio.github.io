@@ -181,11 +181,11 @@ body{
     font-weight: 300; /* Легкий шрифт */
     line-height: 1.6; /* Более компактный межстрочный интервал */
     text-align: justify; /* Выравнивание текста по ширине */
-    margin-bottom: 20px; /* Уменьшенный отступ между абзацами */
-    color: #333; /* Приятный цвет текста (чуть темнее серого) */
+    margin-bottom: 20px;
+    color: white; 
     max-width: 800px; /* Ограничиваем ширину текста для удобного чтения */
     margin-left: auto; /* Центрируем блок */
-    margin-right: auto; /* Центрируем блок */
+    margin-right: auto;
 }
 
 
